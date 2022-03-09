@@ -1,18 +1,18 @@
 # [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
 
-## Description
+## Mô tả
 
-<p>Given the <code>root</code> of a binary tree, <em>check whether it is a mirror of itself</em> (i.e., symmetric around its center).</p>
+Cho nút `root` của cây nhị phân, kiểm tra nó có phải là cây đối xứng hay không (đối xứng qua nút gốc).
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong>Ví dụ 1:</strong></p>
 <img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0101.Symmetric%20Tree/images/symtree1.jpg" style="width: 354px; height: 291px;" />
 <pre>
 <strong>Input:</strong> root = [1,2,2,3,4,4,3]
 <strong>Output:</strong> true
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong>Ví dụ 2:</strong></p>
 <img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0101.Symmetric%20Tree/images/symtree2.jpg" style="width: 308px; height: 258px;" />
 <pre>
 <strong>Input:</strong> root = [1,2,2,null,3,null,3]
@@ -20,17 +20,17 @@
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Yêu cầu:</strong></p>
 
 <ul>
-	<li>The number of nodes in the tree is in the range <code>[1, 1000]</code>.</li>
+	<li>Số lượng nút của cây nằm trong khoảng <code>[1, 1000]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it both recursively and iteratively?
 
-## Solutions
+## Giải pháp
 
 <!-- tabs:start -->
 

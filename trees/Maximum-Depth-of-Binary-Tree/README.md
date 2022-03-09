@@ -1,14 +1,14 @@
 # [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
 
-## Description
+## Mô tả
 
-<p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
+Cho một nút `root` của cây nhị phân, trả về chiều sâu lớn nhất của nó.
 
-<p>A binary tree&#39;s <strong>maximum depth</strong>&nbsp;is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
+Chiều sâu lớn nhất của một cây nhị phân là số lượng nút nằm trên quãng đường từ nút `root` đến nút lá xa nhất.
 
 <p>&nbsp;</p>
 
-<p><strong>Example 1:</strong></p>
+<p><strong>Ví dụ 1:</strong></p>
 
 <img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0104.Maximum%20Depth%20of%20Binary%20Tree/images/tmp-tree.jpg" style="width: 400px; height: 277px;" />
 
@@ -20,7 +20,7 @@
 
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong>Ví dụ 2:</strong></p>
 
 <pre>
 
@@ -30,7 +30,7 @@
 
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong>Ví dụ 3:</strong></p>
 
 <pre>
 
@@ -40,7 +40,7 @@
 
 </pre>
 
-<p><strong>Example 4:</strong></p>
+<p><strong>Ví dụ 4:</strong></p>
 
 <pre>
 
@@ -52,14 +52,14 @@
 
 <p>&nbsp;</p>
 
-<p><strong>Constraints:</strong></p>
+<p><strong>Yêu cầu:</strong></p>
 
 <ul>
-	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
+	<li>Số lượng nút của cây nằm trong khoảng <code>[0, 10<sup>4</sup>]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 
-## Solutions
+## Giải pháp
 
 <!-- tabs:start -->
 
