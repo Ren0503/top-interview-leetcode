@@ -1,45 +1,47 @@
 # [1. Two Sum](https://leetcode.com/problems/two-sum)
 
-## Mô tả
+## Description
 
-Cho một mảng số nguyên `nums` và một giá trị nguyên `target`, trả về hai phần tử trong mảng mà tổng của chúng bằng với `target`.
+<p>Given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
 
-Giả sử mỗi input đều có một giải pháp chính xác, và bạn không thể dùng một phần tử hai lần.
+<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
 
-### Ví dụ 1
+<p>You can return the answer in any order.</p>
 
-```
-Input: nums = [2, 7, 11, 15], target = 9
-Output: [0, 1]
-```
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-Vì nums[0] + nums[1] == 9, ta trả về [0, 1].
+<pre>
+<strong>Input:</strong> nums = [2,7,11,15], target = 9
+<strong>Output:</strong> [0,1]
+<strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].
+</pre>
 
-### Ví dụ 2
+<p><strong>Example 2:</strong></p>
 
-```
-Input: nums = [3, 2, 4], target = 6
-Output: [1, 2]
-```
+<pre>
+<strong>Input:</strong> nums = [3,2,4], target = 6
+<strong>Output:</strong> [1,2]
+</pre>
 
-### Ví dụ 3
+<p><strong>Example 3:</strong></p>
 
-```
-Input: nums = [3, 3], target = 6
-Output: [0, 1]
-```
+<pre>
+<strong>Input:</strong> nums = [3,3], target = 6
+<strong>Output:</strong> [0,1]
+</pre>
 
-## Yêu cầu
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>2 &lt;= nums.length &lt;= 10<sup>3</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
-	<li><strong>Chỉ có một câu trả lời hợp lệ.</strong></li>
+	<li><strong>Only one valid answer exists.</strong></li>
 </ul>
 
-## Giải pháp
-
+## Solutions
 
 <!-- tabs:start -->
 

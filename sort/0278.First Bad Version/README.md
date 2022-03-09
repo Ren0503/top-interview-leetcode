@@ -1,38 +1,45 @@
-# [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version)
+# [278. First Bad Version](https://leetcode.com/problems/first-bad-version)
 
-[English Version](/solution/0200-0299/0278.First%20Bad%20Version/README_EN.md)
+## Description
 
-## 题目描述
+<p>You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.</p>
 
-<!-- 这里写题目描述 -->
+<p>Suppose you have <code>n</code> versions <code>[1, 2, ..., n]</code> and you want to find out the first bad one, which causes all the following ones to be bad.</p>
 
-<p>你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，你的产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。</p>
+<p>You are given an API <code>bool isBadVersion(version)</code> which returns whether <code>version</code> is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.</p>
 
-<p>假设你有 <code>n</code> 个版本 <code>[1, 2, ..., n]</code>，你想找出导致之后所有版本出错的第一个错误的版本。</p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-<p>你可以通过调用&nbsp;<code>bool isBadVersion(version)</code>&nbsp;接口来判断版本号 <code>version</code> 是否在单元测试中出错。实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 API 的次数。</p>
+<pre>
+<strong>Input:</strong> n = 5, bad = 4
+<strong>Output:</strong> 4
+<strong>Explanation:</strong>
+call isBadVersion(3) -&gt; false
+call isBadVersion(5)&nbsp;-&gt; true
+call isBadVersion(4)&nbsp;-&gt; true
+Then 4 is the first bad version.
+</pre>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre>给定 n = 5，并且 version = 4 是第一个错误的版本。
+<pre>
+<strong>Input:</strong> n = 1, bad = 1
+<strong>Output:</strong> 1
+</pre>
 
-<code>调用 isBadVersion(3) -&gt; false
-调用 isBadVersion(5)&nbsp;-&gt; true
-调用 isBadVersion(4)&nbsp;-&gt; true
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-所以，4 是第一个错误的版本。&nbsp;</code></pre>
+<ul>
+	<li><code>1 &lt;= bad &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-二分查找。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # The isBadVersion API is already defined for you.
@@ -57,8 +64,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /* The isBadVersion API is defined in the parent class VersionControl.

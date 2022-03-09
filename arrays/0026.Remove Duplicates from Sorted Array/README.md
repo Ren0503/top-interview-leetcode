@@ -1,44 +1,56 @@
 # [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
 
-## Mô tả
+## Description
 
-Cho một mảng đã sắp xếp `nums`, xoá các phần tử trùng lặp sao cho tất cả phần tử chỉ xuất hiện **một lần** và trả về độ dài mới của mảng.
+<p>Given a sorted array <em>nums</em>, remove the duplicates <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank"><strong>in-place</strong></a> such that each element appears only <em>once</em> and returns the new length.</p>
 
-Không được cấp phát bộ nhớ bổ sung cho các mảng khác, bạn phải thực hiện thay đổi lên chính mảng đầu vào, với độ phức tạp không gian là O(1).
+<p>Do not allocate extra space for another array, you must do this by <strong>modifying the input array <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank">in-place</a></strong> with O(1) extra memory.</p>
 
-### Làm rõ
+<p><strong>Clarification:</strong></p>
 
-Tại sao giá trị trả về là một số nguyên nhưng câu trả lời cho vấn đề lại là một mảng?
+<p>Confused why the returned value is an integer but your answer is an array?</p>
 
-Lưu ý rằng mảng đầu vào được truyền qua bằng tham chiếu, có nghĩa là mọi sửa đổi cho mảng đầu vào sẽ được thực hiện lên chính mảng đó.
+<p>Note that the input array is passed in by <strong>reference</strong>, which means a modification to the input array will be known to the caller as well.</p>
 
-### Ví dụ 1
+<p>Internally you can think of this:</p>
 
-```
-Input: nums = [1, 1, 2]
-Output: 2, nums = [1, 2]
-```
+<pre>
+// <strong>nums</strong> is passed in by reference. (i.e., without making a copy)
+int len = removeDuplicates(nums);
 
-Hàm của bạn trả về length = 2, với hai phần tử trong mảng `nums` là `1` và `2`.
+// any modification to <strong>nums</strong> in your function would be known by the caller.
+// using the length returned by your function, it prints the first <strong>len</strong> elements.
+for (int i = 0; i &lt; len; i++) {
+&nbsp; &nbsp; print(nums[i]);
+}</pre>
 
-### Ví dụ 2
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-```
-Input: nums = [0,0,1,1,1,2,2,3,3,4]
-Output: 5, nums = [0,1,2,3,4]
-```
+<pre>
+<strong>Input:</strong> nums = [1,1,2]
+<strong>Output:</strong> 2, nums = [1,2]
+<strong>Explanation:</strong>&nbsp;Your function should return length = <strong><code>2</code></strong>, with the first two elements of <em><code>nums</code></em> being <strong><code>1</code></strong> and <strong><code>2</code></strong> respectively. It doesn&#39;t matter what you leave beyond the returned length.
+</pre>
 
-Hàm trả về length = 5, với 5 phần tử trong mảng `nums` đã được chỉnh sửa là `1`,`2`, `3`, `4` và `5`. 
+<p><strong>Example 2:</strong></p>
 
-## Yêu cầu
+<pre>
+<strong>Input:</strong> nums = [0,0,1,1,1,2,2,3,3,4]
+<strong>Output:</strong> 5, nums = [0,1,2,3,4]
+<strong>Explanation:</strong>&nbsp;Your function should return length = <strong><code>5</code></strong>, with the first five elements of <em><code>nums</code></em> being modified to&nbsp;<strong><code>0</code></strong>, <strong><code>1</code></strong>, <strong><code>2</code></strong>, <strong><code>3</code></strong>, and&nbsp;<strong><code>4</code></strong> respectively. It doesn&#39;t matter what values are set beyond&nbsp;the returned length.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>0 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
-	<li><code>nums</code>&nbsp;được sắp xếp theo thứ tự lớn dần đều.</li>
+	<li><code>nums</code>&nbsp;is sorted in ascending order.</li>
 </ul>
 
-## Giải pháp
+## Solutions
 
 <!-- tabs:start -->
 

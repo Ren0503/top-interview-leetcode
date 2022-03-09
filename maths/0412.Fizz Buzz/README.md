@@ -1,52 +1,39 @@
-# [412. Fizz Buzz](https://leetcode-cn.com/problems/fizz-buzz)
+# [412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)
 
-[English Version](/solution/0400-0499/0412.Fizz%20Buzz/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an integer <code>n</code>, return <em>a string array</em> <code>answer</code> (<strong>1-indexed</strong>) <em>where</em>:</p>
 
-<!-- 这里写题目描述 -->
+<ul>
+	<li><code>answer[i] == &quot;FizzBuzz&quot;</code> if <code>i</code> is divisible by <code>3</code> and <code>5</code>.</li>
+	<li><code>answer[i] == &quot;Fizz&quot;</code> if <code>i</code> is divisible by <code>3</code>.</li>
+	<li><code>answer[i] == &quot;Buzz&quot;</code> if <code>i</code> is divisible by <code>5</code>.</li>
+	<li><code>answer[i] == i</code> if non of the above conditions are true.</li>
+</ul>
 
-<p>写一个程序，输出从 1 到 <em>n</em> 数字的字符串表示。</p>
-
-<p>1. 如果&nbsp;<em>n&nbsp;</em>是3的倍数，输出&ldquo;Fizz&rdquo;；</p>
-
-<p>2. 如果&nbsp;<em>n&nbsp;</em>是5的倍数，输出&ldquo;Buzz&rdquo;；</p>
-
-<p>3.如果&nbsp;<em>n&nbsp;</em>同时是3和5的倍数，输出 &ldquo;FizzBuzz&rdquo;。</p>
-
-<p><strong>示例：</strong></p>
-
-<pre>n = 15,
-
-返回:
-[
-    &quot;1&quot;,
-    &quot;2&quot;,
-    &quot;Fizz&quot;,
-    &quot;4&quot;,
-    &quot;Buzz&quot;,
-    &quot;Fizz&quot;,
-    &quot;7&quot;,
-    &quot;8&quot;,
-    &quot;Fizz&quot;,
-    &quot;Buzz&quot;,
-    &quot;11&quot;,
-    &quot;Fizz&quot;,
-    &quot;13&quot;,
-    &quot;14&quot;,
-    &quot;FizzBuzz&quot;
-]
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> n = 3
+<strong>Output:</strong> ["1","2","Fizz"]
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> n = 5
+<strong>Output:</strong> ["1","2","Fizz","4","Buzz"]
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> n = 15
+<strong>Output:</strong> ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 </pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-## 解法
+<ul>
+	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
+</ul>
 
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -65,8 +52,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

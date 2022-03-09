@@ -1,41 +1,36 @@
-# [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number)
+# [136. Single Number](https://leetcode.com/problems/single-number)
 
-[English Version](/solution/0100-0199/0136.Single%20Number/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given a <strong>non-empty</strong>&nbsp;array of integers <code>nums</code>, every element appears <em>twice</em> except for one. Find that single one.</p>
 
-<!-- 这里写题目描述 -->
+<p><strong>Follow up:</strong>&nbsp;Could you implement a solution with a linear runtime complexity and without using extra memory?</p>
 
-<p>给定一个<strong>非空</strong>整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p>
-
-<p><strong>说明：</strong></p>
-
-<p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
-
-<p><strong>示例 1:</strong></p>
-
-<pre><strong>输入:</strong> [2,2,1]
-<strong>输出:</strong> 1
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [2,2,1]
+<strong>Output:</strong> 1
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [4,1,2,1,2]
+<strong>Output:</strong> 4
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> nums = [1]
+<strong>Output:</strong> 1
 </pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>示例&nbsp;2:</strong></p>
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
+	<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>
+	<li>Each element in the array appears twice except for one element which appears only once.</li>
+</ul>
 
-<pre><strong>输入:</strong> [4,1,2,1,2]
-<strong>输出:</strong> 4</pre>
-
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-异或运算求解。
-
-首先明确，两个相同的数异或之后的结果为 0。对该数组所有元素进行异或运算，结果就是那个只出现一次的数字。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -47,8 +42,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

@@ -1,28 +1,43 @@
-# [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list)
+# [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
 
-[English Version](/solution/0200-0299/0206.Reverse%20Linked%20List/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given the <code>head</code> of a singly linked list, reverse the list, and return <em>the reversed list</em>.</p>
 
-<!-- 这里写题目描述 -->
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0206.Reverse%20Linked%20List/images/rev1ex1.jpg" style="width: 542px; height: 222px;" />
+<pre>
+<strong>Input:</strong> head = [1,2,3,4,5]
+<strong>Output:</strong> [5,4,3,2,1]
+</pre>
 
-<p>反转一个单链表。</p>
+<p><strong>Example 2:</strong></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0206.Reverse%20Linked%20List/images/rev1ex2.jpg" style="width: 182px; height: 222px;" />
+<pre>
+<strong>Input:</strong> head = [1,2]
+<strong>Output:</strong> [2,1]
+</pre>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example 3:</strong></p>
 
-<pre><strong>输入:</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL
-<strong>输出:</strong> 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</pre>
+<pre>
+<strong>Input:</strong> head = []
+<strong>Output:</strong> []
+</pre>
 
-<p><strong>进阶:</strong><br>
-你可以迭代或递归地反转链表。你能否用两种方法解决这道题？</p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-## 解法
+<ul>
+	<li>The number of nodes in the list is the range <code>[0, 5000]</code>.</li>
+	<li><code>-5000 &lt;= Node.val &lt;= 5000</code></li>
+</ul>
 
-定义指针 `p`、`q` 分别指向头节点和下一个节点，`pre` 指向头节点的前一个节点。
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
 
-遍历链表，改变指针 `p` 指向的节点的指向，将其指向 `pre` 指针指向的节点，即 `p.next = pre`。然后 `pre` 指针指向 `p`，`p`、`q` 指针往前走。
-
-当遍历结束后，返回 `pre` 指针即可。
+## Solutions
 
 <!-- tabs:start -->
 
@@ -48,7 +63,7 @@ class Solution:
 
 ### **Java**
 
-迭代版本：
+Iterative version:
 
 ```java
 /**
@@ -73,7 +88,7 @@ class Solution {
 }
 ```
 
-递归版本：
+Recursive version:
 
 ```java
 /**

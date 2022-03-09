@@ -1,57 +1,64 @@
-# [237. 删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list)
+# [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)
 
-[English Version](/solution/0200-0299/0237.Delete%20Node%20in%20a%20Linked%20List/README_EN.md)
+## Description
 
-## 题目描述
+<p>Write a function to <strong>delete a node</strong> in a singly-linked list. You will <strong>not</strong> be given access to the <code>head</code> of the list, instead you will be given access to <strong>the node to be deleted</strong> directly.</p>
 
-<!-- 这里写题目描述 -->
-
-<p>请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 <strong>要被删除的节点</strong> 。</p>
+<p>It is <strong>guaranteed</strong> that the node to be deleted is <strong>not a tail node</strong> in the list.</p>
 
 <p>&nbsp;</p>
-
-<p>现有一个链表 --&nbsp;head =&nbsp;[4,5,1,9]，它可以表示为:</p>
-
-<p><img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0237.Delete%20Node%20in%20a%20Linked%20List/images/237_example.png" style="height: 49px; width: 300px;"></p>
-
-<p>&nbsp;</p>
-
-<p><strong>示例 1：</strong></p>
-
-<pre><strong>输入：</strong>head = [4,5,1,9], node = 5
-<strong>输出：</strong>[4,1,9]
-<strong>解释：</strong>给定你链表中值为&nbsp;5&nbsp;的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9.
+<p><strong>Example 1:</strong></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0237.Delete%20Node%20in%20a%20Linked%20List/images/node1.jpg" style="width: 450px; height: 322px;" />
+<pre>
+<strong>Input:</strong> head = [4,5,1,9], node = 5
+<strong>Output:</strong> [4,1,9]
+<strong>Explanation: </strong>You are given the second node with value 5, the linked list should become 4 -&gt; 1 -&gt; 9 after calling your function.
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0237.Delete%20Node%20in%20a%20Linked%20List/images/node2.jpg" style="width: 450px; height: 354px;" />
+<pre>
+<strong>Input:</strong> head = [4,5,1,9], node = 1
+<strong>Output:</strong> [4,5,9]
+<strong>Explanation: </strong>You are given the third node with value 1, the linked list should become 4 -&gt; 5 -&gt; 9 after calling your function.
+</pre>
 
-<pre><strong>输入：</strong>head = [4,5,1,9], node = 1
-<strong>输出：</strong>[4,5,9]
-<strong>解释：</strong>给定你链表中值为&nbsp;1&nbsp;的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9.
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> head = [1,2,3,4], node = 3
+<strong>Output:</strong> [1,2,4]
+</pre>
+
+<p><strong>Example 4:</strong></p>
+
+<pre>
+<strong>Input:</strong> head = [0,1], node = 0
+<strong>Output:</strong> [1]
+</pre>
+
+<p><strong>Example 5:</strong></p>
+
+<pre>
+<strong>Input:</strong> head = [-3,5,-99], node = -3
+<strong>Output:</strong> [5,-99]
 </pre>
 
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>链表至少包含两个节点。</li>
-	<li>链表中所有节点的值都是唯一的。</li>
-	<li>给定的节点为非末尾节点并且一定是链表中的一个有效节点。</li>
-	<li>不要从你的函数中返回任何结果。</li>
+	<li>The number of the nodes in the given list is in the range <code>[2, 1000]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+	<li>The value of each node in the list is <strong>unique</strong>.</li>
+	<li>The <code>node</code> to be deleted is <strong>in the list</strong> and is <strong>not a tail</strong> node</li>
 </ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-将 `node.next` 节点的值赋给 `node`，然后将 `node.next` 指向 `node.next` 的下一个节点。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # Definition for singly-linked list.
@@ -71,8 +78,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /**

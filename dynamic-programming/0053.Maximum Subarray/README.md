@@ -1,91 +1,54 @@
-# [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray)
+# [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
 
-[English Version](/solution/0000-0099/0053.Maximum%20Subarray/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an integer array <code>nums</code>, find the contiguous subarray (containing at least one number) which has the largest sum and return <em>its sum</em>.</p>
 
-<!-- 这里写题目描述 -->
-
-<p>给定一个整数数组 <code>nums</code> ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [-2,1,-3,4,-1,2,1,-5,4]
-<strong>输出：</strong>6
-<strong>解释：</strong>连续子数组 [4,-1,2,1] 的和最大，为 6 。
+<strong>Input:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> [4,-1,2,1] has the largest sum = 6.
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [1]
-<strong>输出：</strong>1
+<strong>Input:</strong> nums = [1]
+<strong>Output:</strong> 1
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [0]
-<strong>输出：</strong>0
+<strong>Input:</strong> nums = [5,4,-1,7,8]
+<strong>Output:</strong> 23
 </pre>
 
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums = [-1]
-<strong>输出：</strong>-1
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums = [-100000]
-<strong>输出：</strong>-100000
-</pre>
-
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 <= nums.length <= 3 * 10<sup>4</sup></code></li>
-	<li><code>-10<sup>5</sup> <= nums[i] <= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
+	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
 
-<p> </p>
+<p>&nbsp;</p>
+<strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution using the <strong>divide and conquer</strong> approach, which is more subtle.
 
-<p><strong>进阶：</strong>如果你已经实现复杂度为 <code>O(n)</code> 的解法，尝试使用更为精妙的 <strong>分治法</strong> 求解。</p>
+## Solutions
 
-## 解法
+### 1. Dynamic programming
 
-<!-- 这里可写通用的实现逻辑 -->
-
-### 1. 动态规划
-
-设 `dp[i]` 表示 `[0..i]` 中，以 `nums[i]` 结尾的最大子数组和，状态转移方程 `dp[i] = nums[i] + max(dp[i - 1], 0)`。
-
-由于 `dp[i]` 只与子问题 `dp[i-1]` 有关，故可以用一个变量 f 来表示。
-
-### 2. 分治
-
-最大子序和可能有三种情况：
-
-1. 在数组左半部分
-1. 在数组右半部分
-1. 跨越左右半部分
-
-递归求得三者，返回最大值即可。
+### 2. Divide and Conquer
 
 <!-- tabs:start -->
 
 ### **Python3**
 
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
-动态规划：
+Dynamic programming.
 
 ```python
 class Solution:
@@ -97,7 +60,7 @@ class Solution:
         return res
 ```
 
-分治：
+Divide and Conquer.
 
 ```python
 class Solution:
@@ -128,9 +91,7 @@ class Solution:
 
 ### **Java**
 
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
-动态规划：
+Dynamic programming.
 
 ```java
 class Solution {
@@ -145,7 +106,7 @@ class Solution {
 }
 ```
 
-分治：
+Divide and Conquer.
 
 ```java
 class Solution {

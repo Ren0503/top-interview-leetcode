@@ -1,72 +1,47 @@
-# [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr)
+# [28. Implement strStr()](https://leetcode.com/problems/implement-strstr)
 
-[English Version](/solution/0000-0099/0028.Implement%20strStr%28%29/README_EN.md)
+## Description
 
-## 题目描述
+<p>Implement <a href="http://www.cplusplus.com/reference/cstring/strstr/" target="_blank">strStr()</a>.</p>
 
-<!-- 这里写题目描述 -->
+<p>Return the index of the first occurrence of needle in haystack, or <code>-1</code> if <code>needle</code> is not part of <code>haystack</code>.</p>
 
-<p>实现 <a href="https://baike.baidu.com/item/strstr/811469" target="_blank">strStr()</a> 函数。</p>
+<p><strong>Clarification:</strong></p>
 
-<p>给你两个字符串 <code>haystack</code> 和 <code>needle</code> ，请你在 <code>haystack</code> 字符串中找出 <code>needle</code> 字符串出现的第一个位置（下标从 0 开始）。如果不存在，则返回  <code>-1</code><strong> </strong>。</p>
+<p>What should we return when <code>needle</code> is an empty string? This is a great question to ask during an interview.</p>
 
-<p> </p>
+<p>For the purpose of this problem, we will return 0 when <code>needle</code> is an empty string. This is consistent to C&#39;s&nbsp;<a href="http://www.cplusplus.com/reference/cstring/strstr/" target="_blank">strstr()</a> and Java&#39;s&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)" target="_blank">indexOf()</a>.</p>
 
-<p><strong>说明：</strong></p>
-
-<p>当 <code>needle</code> 是空字符串时，我们应当返回什么值呢？这是一个在面试中很好的问题。</p>
-
-<p>对于本题而言，当 <code>needle</code> 是空字符串时我们应当返回 0 。这与 C 语言的 <a href="https://baike.baidu.com/item/strstr/811469" target="_blank">strstr()</a> 以及 Java 的 <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)" target="_blank">indexOf()</a> 定义相符。</p>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
-
-<pre>
-<strong>输入：</strong>haystack = "hello", needle = "ll"
-<strong>输出：</strong>2
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> haystack = "hello", needle = "ll"
+<strong>Output:</strong> 2
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> haystack = "aaaaa", needle = "bba"
+<strong>Output:</strong> -1
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> haystack = "", needle = ""
+<strong>Output:</strong> 0
 </pre>
-
-<p><strong>示例 2：</strong></p>
-
-<pre>
-<strong>输入：</strong>haystack = "aaaaa", needle = "bba"
-<strong>输出：</strong>-1
-</pre>
-
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>haystack = "", needle = ""
-<strong>输出：</strong>0
-</pre>
-
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 <= haystack.length, needle.length <= 5 * 10<sup>4</sup></code></li>
-	<li><code>haystack</code> 和 <code>needle</code> 仅由小写英文字符组成</li>
+	<li><code>0 &lt;= haystack.length, needle.length &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>haystack</code> and&nbsp;<code>needle</code> consist of only lower-case English characters.</li>
 </ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 

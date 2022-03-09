@@ -1,78 +1,46 @@
-# [326. 3 的幂](https://leetcode-cn.com/problems/power-of-three)
+# [326. Power of Three](https://leetcode.com/problems/power-of-three)
 
-[English Version](/solution/0300-0399/0326.Power%20of%20Three/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an integer <code>n</code>, return <em><code>true</code> if it is a power of three. Otherwise, return <code>false</code></em>.</p>
 
-<!-- 这里写题目描述 -->
+<p>An integer <code>n</code> is a power of three, if there exists an integer <code>x</code> such that <code>n == 3<sup>x</sup></code>.</p>
 
-<p>给定一个整数，写一个函数来判断它是否是 3 的幂次方。如果是，返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
-
-<p>整数 <code>n</code> 是 3 的幂次方需满足：存在整数 <code>x</code> 使得 <code>n == 3<sup>x</sup></code></p>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 27
-<strong>输出：</strong>true
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> n = 27
+<strong>Output:</strong> true
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> n = 0
+<strong>Output:</strong> false
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> n = 9
+<strong>Output:</strong> true
+</pre><p><strong>Example 4:</strong></p>
+<pre><strong>Input:</strong> n = 45
+<strong>Output:</strong> false
 </pre>
-
-<p><strong>示例 2：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 0
-<strong>输出：</strong>false
-</pre>
-
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 9
-<strong>输出：</strong>true
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 45
-<strong>输出：</strong>false
-</pre>
-
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>-2<sup>31</sup> <= n <= 2<sup>31</sup> - 1</code></li>
+	<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
 
-<p> </p>
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Could you solve it without loops/recursion?
 
-<p><strong>进阶：</strong></p>
-
-<ul>
-	<li>你能不使用循环或者递归来完成本题吗？</li>
-</ul>
-
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 

@@ -1,74 +1,53 @@
-# [189. 旋转数组](https://leetcode-cn.com/problems/rotate-array)
+# [189. Rotate Array](https://leetcode.com/problems/rotate-array)
 
-[English Version](/solution/0100-0199/0189.Rotate%20Array/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an array, rotate the array to the right by <code>k</code> steps, where <code>k</code> is non-negative.</p>
 
-<!-- 这里写题目描述 -->
-
-<p>给定一个数组，将数组中的元素向右移动 <code>k</code><em> </em>个位置，其中 <code>k</code><em> </em>是非负数。</p>
-
-<p> </p>
-
-<p><strong>进阶：</strong></p>
-
-<ul>
-	<li>尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。</li>
-	<li>你可以使用空间复杂度为 O(1) 的 <strong>原地 </strong>算法解决这个问题吗？</li>
-</ul>
-
-<p> </p>
-
-<p><strong>示例 1:</strong></p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>输入:</strong> nums = [1,2,3,4,5,6,7], k = 3
-<strong>输出:</strong> <code>[5,6,7,1,2,3,4]</code>
-<strong>解释:</strong>
-向右旋转 1 步: <code>[7,1,2,3,4,5,6]</code>
-向右旋转 2 步: <code>[6,7,1,2,3,4,5]
-</code>向右旋转 3 步: <code>[5,6,7,1,2,3,4]</code>
+<strong>Input:</strong> nums = [1,2,3,4,5,6,7], k = 3
+<strong>Output:</strong> [5,6,7,1,2,3,4]
+<strong>Explanation:</strong>
+rotate 1 steps to the right: [7,1,2,3,4,5,6]
+rotate 2 steps to the right: [6,7,1,2,3,4,5]
+rotate 3 steps to the right: [5,6,7,1,2,3,4]
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [-1,-100,3,99], k = 2
-<strong>输出：</strong>[3,99,-1,-100]
-<strong>解释:</strong>
-向右旋转 1 步: [99,-1,-100,3]
-向右旋转 2 步: [3,99,-1,-100]</pre>
+<strong>Input:</strong> nums = [-1,-100,3,99], k = 2
+<strong>Output:</strong> [3,99,-1,-100]
+<strong>Explanation:</strong>
+rotate 1 steps to the right: [99,-1,-100,3]
+rotate 2 steps to the right: [3,99,-1,-100]
+</pre>
 
-<p> </p>
-
-<p><strong>提示：</strong></p>
-
-<ul>
-	<li><code>1 <= nums.length <= 2 * 10<sup>4</sup></code></li>
-	<li><code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code></li>
-	<li><code>0 <= k <= 10<sup>5</sup></code></li>
-</ul>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>
+	<li><code>0 &lt;= k &lt;= 10<sup>5</sup></code></li>
 </ul>
 
-## 解法
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong></p>
 
-<!-- 这里可写通用的实现逻辑 -->
+<ul>
+	<li>Try to come up with as many solutions as you can. There are at least <strong>three</strong> different ways to solve this problem.</li>
+	<li>Could you do it in-place with <code>O(1)</code> extra space?</li>
+</ul>
 
-若 `k=3`，`nums=[1,2,3,4,5,6,7]`。
-
-先将 `nums` 整体翻转：`[1,2,3,4,5,6,7]` -> `[7,6,5,4,3,2,1]`
-
-再翻转 `0~k-1` 范围内的元素：`[7,6,5,4,3,2,1]` -> `[5,6,7,4,3,2,1]`
-
-最后翻转 `k~n-1` 范围内的元素，即可得到最终结果：`[5,6,7,4,3,2,1]` -> `[5,6,7,1,2,3,4]`
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -86,8 +65,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -119,10 +96,6 @@ class Solution {
 ```
 
 ### **JavaScript**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
-使用原生 API 将数组的 `k~n-1` 范围内的元素插入到前面
 
 ```js
 /**

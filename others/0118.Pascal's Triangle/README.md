@@ -1,40 +1,31 @@
-# [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle)
+# [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)
 
-[English Version](/solution/0100-0199/0118.Pascal%27s%20Triangle/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an integer <code>numRows</code>, return the first numRows of <strong>Pascal&#39;s triangle</strong>.</p>
 
-<!-- 这里写题目描述 -->
+<p>In <strong>Pascal&#39;s triangle</strong>, each number is the sum of the two numbers directly above it as shown:</p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0118.Pascal%27s%20Triangle/images/PascalTriangleAnimated2.gif" style="height:240px; width:260px" />
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> numRows = 5
+<strong>Output:</strong> [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> numRows = 1
+<strong>Output:</strong> [[1]]
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p>给定一个非负整数&nbsp;<em>numRows，</em>生成杨辉三角的前&nbsp;<em>numRows&nbsp;</em>行。</p>
+<ul>
+	<li><code>1 &lt;= numRows &lt;= 30</code></li>
+</ul>
 
-<p><img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0118.Pascal%27s%20Triangle/images/PascalTriangleAnimated2.gif"></p>
-
-<p><small>在杨辉三角中，每个数是它左上方和右上方的数的和。</small></p>
-
-<p><strong>示例:</strong></p>
-
-<pre><strong>输入:</strong> 5
-<strong>输出:</strong>
-[
-     [1],
-    [1,1],
-   [1,2,1],
-  [1,3,3,1],
- [1,4,6,4,1]
-]</pre>
-
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-先设置每一行首尾元素为 1，其它元素为 0。然后根据杨辉三角，设置每一行其它元素即可。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -49,8 +40,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

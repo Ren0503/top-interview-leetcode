@@ -1,36 +1,39 @@
-# [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome)
+# [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
 
-[English Version](/solution/0100-0199/0125.Valid%20Palindrome/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given a string <code>s</code>, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.</p>
 
-<!-- 这里写题目描述 -->
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-<p>给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。</p>
-
-<p><strong>说明：</strong>本题中，我们将空字符串定义为有效的回文串。</p>
-
-<p><strong>示例 1:</strong></p>
-
-<pre><strong>输入:</strong> &quot;A man, a plan, a canal: Panama&quot;
-<strong>输出:</strong> true
+<pre>
+<strong>Input:</strong> s = &quot;A man, a plan, a canal: Panama&quot;
+<strong>Output:</strong> true
+<strong>Explanation:</strong> &quot;amanaplanacanalpanama&quot; is a palindrome.
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre><strong>输入:</strong> &quot;race a car&quot;
-<strong>输出:</strong> false
+<pre>
+<strong>Input:</strong> s = &quot;race a car&quot;
+<strong>Output:</strong> false
+<strong>Explanation:</strong> &quot;raceacar&quot; is not a palindrome.
 </pre>
 
-## 解法
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<!-- 这里可写通用的实现逻辑 -->
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 2 * 10<sup>5</sup></code></li>
+	<li><code>s</code> consists only of printable ASCII characters.</li>
+</ul>
+
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -50,8 +53,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -103,7 +104,7 @@ private:
 };
 ```
 
-### **tTypeScript**
+### **TypeScript**
 
 ```ts
 function isPalindrome(s: string): boolean {

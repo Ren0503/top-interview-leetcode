@@ -1,38 +1,41 @@
-# [461. 汉明距离](https://leetcode-cn.com/problems/hamming-distance)
+# [461. Hamming Distance](https://leetcode.com/problems/hamming-distance)
 
-[English Version](/solution/0400-0499/0461.Hamming%20Distance/README_EN.md)
+## Description
 
-## 题目描述
+<p>The <a href="https://en.wikipedia.org/wiki/Hamming_distance" target="_blank">Hamming distance</a> between two integers is the number of positions at which the corresponding bits are different.</p>
 
-<!-- 这里写题目描述 -->
+<p>Given two integers <code>x</code> and <code>y</code>, return <em>the <strong>Hamming distance</strong> between them</em>.</p>
 
-<p>两个整数之间的<a href="https://baike.baidu.com/item/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB">汉明距离</a>指的是这两个数字对应二进制位不同的位置的数目。</p>
-
-<p>给出两个整数 <code>x</code> 和 <code>y</code>，计算它们之间的汉明距离。</p>
-
-<p><strong>注意：</strong><br />
-0 &le; <code>x</code>, <code>y</code> &lt; 2<sup>31</sup>.</p>
-
-<p><strong>示例:</strong></p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>输入:</strong> x = 1, y = 4
-
-<strong>输出:</strong> 2
-
-<strong>解释:</strong>
+<strong>Input:</strong> x = 1, y = 4
+<strong>Output:</strong> 2
+<strong>Explanation:</strong>
 1   (0 0 0 1)
 4   (0 1 0 0)
        &uarr;   &uarr;
-
-上面的箭头指出了对应二进制位不同的位置。
+The above arrows point to positions where the corresponding bits are different.
 </pre>
 
-## 解法
+<p><strong>Example 2:</strong></p>
 
-<!-- 这里可写通用的实现逻辑 -->
+<pre>
+<strong>Input:</strong> x = 3, y = 1
+<strong>Output:</strong> 1
+</pre>
 
-利用异或运算的规律找出不同的位
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>0 &lt;=&nbsp;x, y &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+
+## Solutions
+
+Use xor operation to find different bits.
 
 - 0 ^ 0 = 0
 - 1 ^ 1 = 0
@@ -42,8 +45,6 @@
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -56,8 +57,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
@@ -73,7 +72,7 @@ class Solution {
 }
 ```
 
-或者利用库函数 `Integer.bitCount()`
+Or use the library function `Integer.bitCount()`
 
 ```java
 class Solution {

@@ -1,34 +1,35 @@
-# [283. 移动零](https://leetcode-cn.com/problems/move-zeroes)
+# [283. Move Zeroes](https://leetcode.com/problems/move-zeroes)
 
-[English Version](/solution/0200-0299/0283.Move%20Zeroes/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an integer array <code>nums</code>, move all <code>0</code>&#39;s to the end of it while maintaining the relative order of the non-zero elements.</p>
 
-<!-- 这里写题目描述 -->
+<p><strong>Note</strong> that you must do this in-place without making a copy of the array.</p>
 
-<p>给定一个数组 <code>nums</code>，编写一个函数将所有 <code>0</code> 移动到数组的末尾，同时保持非零元素的相对顺序。</p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [0,1,0,3,12]
+<strong>Output:</strong> [1,3,12,0,0]
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [0]
+<strong>Output:</strong> [0]
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>示例:</strong></p>
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
 
-<pre><strong>输入:</strong> <code>[0,1,0,3,12]</code>
-<strong>输出:</strong> <code>[1,3,12,0,0]</code></pre>
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Could you minimize the total number of operations done?
 
-<p><strong>说明</strong>:</p>
-
-<ol>
-	<li>必须在原数组上操作，不能拷贝额外的数组。</li>
-	<li>尽量减少操作次数。</li>
-</ol>
-
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -44,8 +45,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

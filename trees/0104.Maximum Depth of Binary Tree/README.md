@@ -1,39 +1,69 @@
-# [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)
+# [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
 
-[English Version](/solution/0100-0199/0104.Maximum%20Depth%20of%20Binary%20Tree/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
 
-<!-- 这里写题目描述 -->
+<p>A binary tree&#39;s <strong>maximum depth</strong>&nbsp;is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
 
-<p>给定一个二叉树，找出其最大深度。</p>
+<p>&nbsp;</p>
 
-<p>二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。</p>
+<p><strong>Example 1:</strong></p>
 
-<p><strong>说明:</strong>&nbsp;叶子节点是指没有子节点的节点。</p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0104.Maximum%20Depth%20of%20Binary%20Tree/images/tmp-tree.jpg" style="width: 400px; height: 277px;" />
 
-<p><strong>示例：</strong><br>
-给定二叉树 <code>[3,9,20,null,null,15,7]</code>，</p>
+<pre>
 
-<pre>    3
-   / \
-  9  20
-    /  \
-   15   7</pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
 
-<p>返回它的最大深度&nbsp;3 。</p>
+<strong>Output:</strong> 3
 
-## 解法
+</pre>
 
-<!-- 这里可写通用的实现逻辑 -->
+<p><strong>Example 2:</strong></p>
 
-递归遍历左右子树，求左右子树的最大深度 +1 即可。
+<pre>
+
+<strong>Input:</strong> root = [1,null,2]
+
+<strong>Output:</strong> 2
+
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+
+<strong>Input:</strong> root = []
+
+<strong>Output:</strong> 0
+
+</pre>
+
+<p><strong>Example 4:</strong></p>
+
+<pre>
+
+<strong>Input:</strong> root = [0]
+
+<strong>Output:</strong> 1
+
+</pre>
+
+<p>&nbsp;</p>
+
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # Definition for a binary tree node.
@@ -51,8 +81,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /**

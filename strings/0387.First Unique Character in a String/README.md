@@ -1,39 +1,33 @@
-# [387. 字符串中的第一个唯一字符](https://leetcode-cn.com/problems/first-unique-character-in-a-string)
+# [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)
 
-[English Version](/solution/0300-0399/0387.First%20Unique%20Character%20in%20a%20String/README_EN.md)
+## Description
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
-
-<p>给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。</p>
+<p>Given a string <code>s</code>, return <em>the first non-repeating character in it and return its index</em>. If it does not exist, return <code>-1</code>.</p>
 
 <p>&nbsp;</p>
-
-<p><strong>示例：</strong></p>
-
-<pre>s = &quot;leetcode&quot;
-返回 0
-
-s = &quot;loveleetcode&quot;
-返回 2
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> s = "leetcode"
+<strong>Output:</strong> 0
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> s = "loveleetcode"
+<strong>Output:</strong> 2
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> s = "aabb"
+<strong>Output:</strong> -1
 </pre>
-
 <p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>提示：</strong>你可以假定该字符串只包含小写字母。</p>
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>s</code> consists of only lowercase English letters.</li>
+</ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-遍历字符串，用一个 map 或者字典存放字符串中每个字符出现的次数。然后再次遍历字符串，取出对应字符出现的次数，若次数为 1，直接返回当前字符串的下标。遍历结束，返回 -1。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -46,8 +40,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

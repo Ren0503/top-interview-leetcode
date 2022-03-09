@@ -1,65 +1,37 @@
-# [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer)
+# [7. Reverse Integer](https://leetcode.com/problems/reverse-integer)
 
-[English Version](/solution/0000-0099/0007.Reverse%20Integer/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given a signed 32-bit integer <code>x</code>, return <code>x</code><em> with its digits reversed</em>. If reversing <code>x</code> causes the value to go outside the signed 32-bit integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then return <code>0</code>.</p>
 
-<!-- 这里写题目描述 -->
+<p><strong>Assume the environment does not allow you to store 64-bit integers (signed or unsigned).</strong></p>
 
-<p>给你一个 32 位的有符号整数 <code>x</code> ，返回将 <code>x</code> 中的数字部分反转后的结果。</p>
-
-<p>如果反转后整数超过 32 位的有符号整数的范围 <code>[−2<sup>31</sup>,  2<sup>31 </sup>− 1]</code> ，就返回 0。</p>
-<strong>假设环境不允许存储 64 位整数（有符号或无符号）。</strong>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
-
-<pre>
-<strong>输入：</strong>x = 123
-<strong>输出：</strong>321
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> x = 123
+<strong>Output:</strong> 321
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> x = -123
+<strong>Output:</strong> -321
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> x = 120
+<strong>Output:</strong> 21
+</pre><p><strong>Example 4:</strong></p>
+<pre><strong>Input:</strong> x = 0
+<strong>Output:</strong> 0
 </pre>
-
-<p><strong>示例 2：</strong></p>
-
-<pre>
-<strong>输入：</strong>x = -123
-<strong>输出：</strong>-321
-</pre>
-
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>x = 120
-<strong>输出：</strong>21
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>x = 0
-<strong>输出：</strong>0
-</pre>
-
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>-2<sup>31</sup> <= x <= 2<sup>31</sup> - 1</code></li>
+	<li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
-转字符串，进行翻转。
 
 ```python
 class Solution:
@@ -71,13 +43,10 @@ class Solution:
 
 ### **Java**
 
-<!-- 这里可写当前语言的特殊实现逻辑 -->
-
 ```java
 class Solution {
     public int reverse(int x) {
         long res = 0;
-        // 考虑负数情况，所以这里条件为: x != 0
         while (x != 0) {
             res = res * 10 + (x % 10);
             x /= 10;

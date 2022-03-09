@@ -1,38 +1,40 @@
-# [234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list)
+# [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)
 
-[English Version](/solution/0200-0299/0234.Palindrome%20Linked%20List/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given the <code>head</code> of a singly linked list, return <code>true</code> if it is a palindrome.</p>
 
-<!-- 这里写题目描述 -->
-
-<p>请判断一个链表是否为回文链表。</p>
-
-<p><strong>示例 1:</strong></p>
-
-<pre><strong>输入:</strong> 1-&gt;2
-<strong>输出:</strong> false</pre>
-
-<p><strong>示例 2:</strong></p>
-
-<pre><strong>输入:</strong> 1-&gt;2-&gt;2-&gt;1
-<strong>输出:</strong> true
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0234.Palindrome%20Linked%20List/images/pal1linked-list.jpg" style="width: 422px; height: 62px;" />
+<pre>
+<strong>Input:</strong> head = [1,2,2,1]
+<strong>Output:</strong> true
 </pre>
 
-<p><strong>进阶：</strong><br>
-你能否用&nbsp;O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</p>
+<p><strong>Example 2:</strong></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0200-0299/0234.Palindrome%20Linked%20List/images/pal2linked-list.jpg" style="width: 182px; height: 62px;" />
+<pre>
+<strong>Input:</strong> head = [1,2]
+<strong>Output:</strong> false
+</pre>
 
-## 解法
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<!-- 这里可写通用的实现逻辑 -->
+<ul>
+	<li>The number of nodes in the list is in the range <code>[1, 10<sup>5</sup>]</code>.</li>
+	<li><code>0 &lt;= Node.val &lt;= 9</code></li>
+</ul>
 
-先用快慢指针找到链表的中点，接着反转右半部分的链表。然后同时遍历前后两段链表，若前后两段链表节点对应的值不等，说明不是回文链表，否则说明是回文链表。
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Could you do it in <code>O(n)</code> time and <code>O(1)</code> space?
+
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # Definition for singly-linked list.
@@ -60,8 +62,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /**

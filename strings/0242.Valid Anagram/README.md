@@ -1,41 +1,33 @@
-# [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram)
+# [242. Valid Anagram](https://leetcode.com/problems/valid-anagram)
 
-[English Version](/solution/0200-0299/0242.Valid%20Anagram/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> <em>if</em> <code>t</code> <em>is an anagram of</em> <code>s</code><em>, and</em> <code>false</code> <em>otherwise</em>.</p>
 
-<!-- 这里写题目描述 -->
-
-<p>给定两个字符串 <em>s</em> 和 <em>t</em> ，编写一个函数来判断 <em>t</em> 是否是 <em>s</em> 的字母异位词。</p>
-
-<p><strong>示例&nbsp;1:</strong></p>
-
-<pre><strong>输入:</strong> <em>s</em> = &quot;anagram&quot;, <em>t</em> = &quot;nagaram&quot;
-<strong>输出:</strong> true
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> s = "anagram", t = "nagaram"
+<strong>Output:</strong> true
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> s = "rat", t = "car"
+<strong>Output:</strong> false
 </pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>示例 2:</strong></p>
+<ul>
+	<li><code>1 &lt;= s.length, t.length &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>s</code> and <code>t</code> consist of lowercase English letters.</li>
+</ul>
 
-<pre><strong>输入:</strong> <em>s</em> = &quot;rat&quot;, <em>t</em> = &quot;car&quot;
-<strong>输出: </strong>false</pre>
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> What if the inputs contain Unicode characters? How would you adapt your solution to such a case?</p>
 
-<p><strong>说明:</strong><br>
-你可以假设字符串只包含小写字母。</p>
-
-<p><strong>进阶:</strong><br>
-如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？</p>
-
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-数组或哈希表累加 s 中每个字符出现的次数，再减去 t 中对应的每个字符出现的次数。遍历结束后，若字符中出现次数不为 0 的情况，返回 false，否则返回 true。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -50,8 +42,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

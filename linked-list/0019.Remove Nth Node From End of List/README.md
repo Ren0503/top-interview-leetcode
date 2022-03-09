@@ -1,60 +1,48 @@
-# [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)
+# [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 
-[English Version](/solution/0000-0099/0019.Remove%20Nth%20Node%20From%20End%20of%20List/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given the <code>head</code> of a linked list, remove the <code>n<sup>th</sup></code> node from the end of the list and return its head.</p>
 
-<!-- 这里写题目描述 -->
+<p><strong>Follow up:</strong>&nbsp;Could you do this in one pass?</p>
 
-<p>给你一个链表，删除链表的倒数第 <code>n</code><em> </em>个结点，并且返回链表的头结点。</p>
-
-<p><strong>进阶：</strong>你能尝试使用一趟扫描实现吗？</p>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 <img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0000-0099/0019.Remove%20Nth%20Node%20From%20End%20of%20List/images/remove_ex1.jpg" style="width: 542px; height: 222px;" />
 <pre>
-<strong>输入：</strong>head = [1,2,3,4,5], n = 2
-<strong>输出：</strong>[1,2,3,5]
+<strong>Input:</strong> head = [1,2,3,4,5], n = 2
+<strong>Output:</strong> [1,2,3,5]
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>head = [1], n = 1
-<strong>输出：</strong>[]
+<strong>Input:</strong> head = [1], n = 1
+<strong>Output:</strong> []
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>输入：</strong>head = [1,2], n = 1
-<strong>输出：</strong>[1]
+<strong>Input:</strong> head = [1,2], n = 1
+<strong>Output:</strong> [1]
 </pre>
 
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>链表中结点的数目为 <code>sz</code></li>
-	<li><code>1 <= sz <= 30</code></li>
-	<li><code>0 <= Node.val <= 100</code></li>
-	<li><code>1 <= n <= sz</code></li>
+	<li>The number of nodes in the list is <code>sz</code>.</li>
+	<li><code>1 &lt;= sz &lt;= 30</code></li>
+	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
+	<li><code>1 &lt;= n &lt;= sz</code></li>
 </ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-利用快慢指针。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # Definition for singly-linked list.
@@ -75,8 +63,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /**

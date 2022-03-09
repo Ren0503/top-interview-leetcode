@@ -1,44 +1,33 @@
-# [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate)
+# [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
 
-[English Version](/solution/0200-0299/0217.Contains%20Duplicate/README_EN.md)
+## Description
 
-## 题目描述
+<p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
 
-<!-- 这里写题目描述 -->
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [1,2,3,1]
+<strong>Output:</strong> true
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [1,2,3,4]
+<strong>Output:</strong> false
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> nums = [1,1,1,3,3,4,3,2,4,2]
+<strong>Output:</strong> true
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p>给定一个整数数组，判断是否存在重复元素。</p>
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+</ul>
 
-<p>如果存在一值在数组中出现至少两次，函数返回 <code>true</code> 。如果数组中每个元素都不相同，则返回 <code>false</code> 。</p>
-
-<p> </p>
-
-<p><strong>示例 1:</strong></p>
-
-<pre>
-<strong>输入:</strong> [1,2,3,1]
-<strong>输出:</strong> true</pre>
-
-<p><strong>示例 2:</strong></p>
-
-<pre>
-<strong>输入: </strong>[1,2,3,4]
-<strong>输出:</strong> false</pre>
-
-<p><strong>示例 3:</strong></p>
-
-<pre>
-<strong>输入: </strong>[1,1,1,3,3,4,3,2,4,2]
-<strong>输出:</strong> true</pre>
-
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -47,8 +36,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {

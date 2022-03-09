@@ -1,57 +1,45 @@
-# [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)
+# [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
-[English Version](/solution/0000-0099/0021.Merge%20Two%20Sorted%20Lists/README_EN.md)
+## Description
 
-## 题目描述
+<p>Merge two sorted linked lists and return it as a <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
 
-<!-- 这里写题目描述 -->
-
-<p>将两个升序链表合并为一个新的 <strong>升序</strong> 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </p>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 <img alt="" src="https://cdn.jsdelivr.net/gh/doocs/leetcode@main/solution/0000-0099/0021.Merge%20Two%20Sorted%20Lists/images/merge_ex1.jpg" style="width: 662px; height: 302px;" />
 <pre>
-<strong>输入：</strong>l1 = [1,2,4], l2 = [1,3,4]
-<strong>输出：</strong>[1,1,2,3,4,4]
+<strong>Input:</strong> l1 = [1,2,4], l2 = [1,3,4]
+<strong>Output:</strong> [1,1,2,3,4,4]
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>l1 = [], l2 = []
-<strong>输出：</strong>[]
+<strong>Input:</strong> l1 = [], l2 = []
+<strong>Output:</strong> []
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>输入：</strong>l1 = [], l2 = [0]
-<strong>输出：</strong>[0]
+<strong>Input:</strong> l1 = [], l2 = [0]
+<strong>Output:</strong> [0]
 </pre>
 
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>两个链表的节点数目范围是 <code>[0, 50]</code></li>
-	<li><code>-100 <= Node.val <= 100</code></li>
-	<li><code>l1</code> 和 <code>l2</code> 均按 <strong>非递减顺序</strong> 排列</li>
+	<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+	<li>Both <code>l1</code> and <code>l2</code> are sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
-
-迭代遍历两链表，比较节点值 val 的大小，进行节点串联，得到最终链表。
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 # Definition for singly-linked list.
@@ -76,8 +64,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 /**

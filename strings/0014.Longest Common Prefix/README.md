@@ -1,50 +1,41 @@
-# [14. 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix)
+# [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)
 
-[English Version](/solution/0000-0099/0014.Longest%20Common%20Prefix/README_EN.md)
+## Description
 
-## 题目描述
+<p>Write a function to find the longest common prefix string amongst an array of strings.</p>
 
-<!-- 这里写题目描述 -->
+<p>If there is no common prefix, return an empty string <code>&quot;&quot;</code>.</p>
 
-<p>编写一个函数来查找字符串数组中的最长公共前缀。</p>
-
-<p>如果不存在公共前缀，返回空字符串 <code>""</code>。</p>
-
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>输入：</strong>strs = ["flower","flow","flight"]
-<strong>输出：</strong>"fl"
+<strong>Input:</strong> strs = [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]
+<strong>Output:</strong> &quot;fl&quot;
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>strs = ["dog","racecar","car"]
-<strong>输出：</strong>""
-<strong>解释：</strong>输入不存在公共前缀。</pre>
+<strong>Input:</strong> strs = [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]
+<strong>Output:</strong> &quot;&quot;
+<strong>Explanation:</strong> There is no common prefix among the input strings.
+</pre>
 
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 <= strs.length <= 200</code></li>
-	<li><code>0 <= strs[i].length <= 200</code></li>
-	<li><code>strs[i]</code> 仅由小写英文字母组成</li>
+	<li><code>0 &lt;= strs.length &lt;= 200</code></li>
+	<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>
+	<li><code>strs[i]</code> consists of only lower-case English letters.</li>
 </ul>
 
-## 解法
-
-<!-- 这里可写通用的实现逻辑 -->
+## Solutions
 
 <!-- tabs:start -->
 
 ### **Python3**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```python
 class Solution:
@@ -60,8 +51,6 @@ class Solution:
 ```
 
 ### **Java**
-
-<!-- 这里可写当前语言的特殊实现逻辑 -->
 
 ```java
 class Solution {
