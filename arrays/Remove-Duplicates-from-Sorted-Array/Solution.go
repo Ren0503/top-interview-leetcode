@@ -1,10 +1,16 @@
 func removeDuplicates(nums []int) int {
-    i := 0
-	for _, num := range nums {
-		if i < 1 || num != nums[i-1] {
-			nums[i] = num
-			i++
+	ln := len(nums)
+	if ln <= 1 {
+		return ln
+	}
+
+	j := 0 // points to  the index of last filled position
+	for i := 1; i < ln; i++ {
+		if nums[j] != nums[i] {
+			j++
+			nums[j] = nums[i]
 		}
 	}
-	return i
+
+	return j + 1
 }
