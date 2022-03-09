@@ -1,27 +1,28 @@
 # [278. First Bad Version](https://leetcode.com/problems/first-bad-version)
 
-## Description
+## Mô tả
 
-<p>You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.</p>
+Bạn là một nhà quản lý sản phẩm và hiện đang lãnh đạo một team phát triển sản phẩm mới. Không may, phiên bản cuối cùng trong sản phẩm của bạn đã bị lỗi khi kiểm tra chất lượng. Vì mỗi phiên bản đều được phát triển dựa trên phiên bản trước đó. Nên tất cả phiên bản sau một phiên bản lỗi đều bị lỗi tương tự.
 
-<p>Suppose you have <code>n</code> versions <code>[1, 2, ..., n]</code> and you want to find out the first bad one, which causes all the following ones to be bad.</p>
+Giả sử bạn có `n` phiên bản `[1, 2, ..., n]`  và bạn muốn tìm cái bị lỗi đầu tiên, cái dẫn đến tất cả sản phẩm phía sau bị lỗi.
 
-<p>You are given an API <code>bool isBadVersion(version)</code> which returns whether <code>version</code> is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.</p>
+Bạn được cho API `bool isBadVersion(version)` trả về bất cứ `version` nào là lỗi. Triển khai một hàm để phát hiện phiên bản lỗi đầu tiên. Bạn nên hạn chế tối thiểu số lần gọi API.
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong>Ví dụ 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> n = 5, bad = 4
 <strong>Output:</strong> 4
-<strong>Explanation:</strong>
-call isBadVersion(3) -&gt; false
-call isBadVersion(5)&nbsp;-&gt; true
-call isBadVersion(4)&nbsp;-&gt; true
-Then 4 is the first bad version.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<strong>Giải thích:</strong>
+gọi isBadVersion(3) -&gt; false;
+isBadVersion(5)&nbsp;-&gt; true;
+isBadVersion(4)&nbsp;-&gt; true
+Do đó 4 là phiên bản lỗi đầu tiên.
+
+<p><strong>Ví dụ 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> n = 1, bad = 1
@@ -29,13 +30,13 @@ Then 4 is the first bad version.
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Yêu cầu:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= bad &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
 
-## Solutions
+## Giải pháp
 
 <!-- tabs:start -->
 

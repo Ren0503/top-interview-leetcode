@@ -1,21 +1,20 @@
 # [155. Min Stack](https://leetcode.com/problems/min-stack)
 
-## Description
+## Mô tả
 
-<p>Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.</p>
+Thiết kế một ngăn xếp hỗ trợ các thao tác push, pop, top và truy xuất phần tử nhỏ nhất trong thời gian `O(1)`.
 
-<p>Implement the <code>MinStack</code> class:</p>
-
+Triển khai lớp `MinStack`:
 <ul>
-	<li><code>MinStack()</code> initializes the stack object.</li>
-	<li><code>void push(val)</code> pushes the element <code>val</code> onto the stack.</li>
-	<li><code>void pop()</code> removes the element on the top of the stack.</li>
-	<li><code>int top()</code> gets the top element of the stack.</li>
-	<li><code>int getMin()</code> retrieves the minimum element in the stack.</li>
+	<li><code>MinStack()</code> khởi tạo đối tượng ngăn xếp.</li>
+	<li><code>void push(val)</code> đưa phần tử <code>val</code> vào đầu ngăn xếp.</li>
+	<li><code>void pop()</code> xoá phần tử đầu khỏi ngăn xếp.</li>
+	<li><code>int top()</code> lấy giá trị phần tử đầu từ ngăn xếp.</li>
+	<li><code>int getMin()</code> truy xuất giá trị nhỏ nhất trong ngắn xếp.</li>
 </ul>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong>Ví dụ 1:</strong></p>
 
 <pre>
 <strong>Input</strong>
@@ -37,15 +36,15 @@ minStack.getMin(); // return -2
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Yêu cầu:</strong></p>
 
 <ul>
 	<li><code>-2<sup>31</sup> &lt;= val &lt;= 2<sup>31</sup> - 1</code></li>
-	<li>Methods <code>pop</code>, <code>top</code> and <code>getMin</code> operations will always be called on <strong>non-empty</strong> stacks.</li>
-	<li>At most <code>3 * 10<sup>4</sup></code> calls will be made to <code>push</code>, <code>pop</code>, <code>top</code>, and <code>getMin</code>.</li>
+	<li>Phương thức <code>pop</code>, <code>top</code> và <code>getMin</code> luôn được gọi trên một ngăn xếp <strong>có-phần tử</strong>.</li>
+	<li>Ít nhất có <code>3 * 10<sup>4</sup></code> lần gọi đến <code>push</code>, <code>pop</code>, <code>top</code>, và <code>getMin</code>.</li>
 </ul>
 
-## Solutions
+## Giải pháp
 
 <!-- tabs:start -->
 

@@ -1,19 +1,19 @@
 # [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)
 
-## Description
+## Mô tả
 
-<p>Given an integer array <code>nums</code>, design an algorithm to randomly shuffle the array.</p>
+Cho một mảng số nguyên `nums`, thiết kế thuật toán trộn mảng ngẫu nhiên.
 
-<p>Implement the <code>Solution</code> class:</p>
+Triển khai lớp `Solution`:
 
 <ul>
-	<li><code>Solution(int[] nums)</code> Initializes the object with the integer array nums.</li>
-	<li><code>int[] reset()</code> Resets the array to its original configuration and returns it.</li>
-	<li><code>int[] shuffle()</code> Returns a random shuffling of the array.</li>
+	<li><code>Solution(int[] nums)</code> khởi tạo đối tượng với mảng số nguyên nums.</li>
+	<li><code>int[] reset()</code> Thiết lập lại mảng từ cấu hình gốc và trả về.</li>
+	<li><code>int[] shuffle()</code> Trả về một mảng được trộn ngẫu nhiên.</li>
 </ul>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong>Ví dụ 1:</strong></p>
 
 <pre>
 <strong>Input</strong>
@@ -31,16 +31,16 @@ solution.shuffle();    // Returns the random shuffling of array [1,2,3]. Example
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Yêu cầu:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 200</code></li>
 	<li><code>-10<sup>6</sup> &lt;= nums[i] &lt;= 10<sup>6</sup></code></li>
-	<li>All the elements of <code>nums</code> are <strong>unique</strong>.</li>
-	<li>At most <code>5 * 10<sup>4</sup></code> calls will be made to <code>reset</code> and <code>shuffle</code>.</li>
+	<li>Tất cả phần tử trong <code>nums</code> là <strong>duy nhất</strong>.</li>
+	<li>Có <code>5 * 10<sup>4</sup></code> lần gọi đến các hàm <code>reset</code> and <code>shuffle</code>.</li>
 </ul>
 
-## Solutions
+## Giải pháp
 
 <!-- tabs:start -->
 

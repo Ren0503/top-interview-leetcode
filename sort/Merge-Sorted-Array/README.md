@@ -1,21 +1,20 @@
 # [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
 
-## Description
+## Mô tả
 
-<p>Given two sorted integer arrays <code>nums1</code> and <code>nums2</code>, merge <code>nums2</code> into <code>nums1</code> as one sorted array.</p>
+Cho hai mảng số nguyên đã sắp xếp là `nums1` và `nums2`, ghép `nums2` vào `nums1` như một mảng đã sắp xếp.
 
-<p>The number of elements initialized in <code>nums1</code> and <code>nums2</code> are <code>m</code> and <code>n</code> respectively. You may assume that <code>nums1</code> has a size equal to <code>m + n</code> such that it has enough space to hold additional elements from <code>nums2</code>.</p>
+Số lượng phần tử ban đầu của `nums1` và `nums2` là `m` và `n`. Giả sử rằng kích thước của `nums1` bằng với `m + 1` đủ để chứa các phần tử thêm vào từ `nums2`.
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong>Ví dụ 1:</strong></p>
 <pre><strong>Input:</strong> nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
 <strong>Output:</strong> [1,2,2,3,5,6]
-</pre><p><strong>Example 2:</strong></p>
+</pre><p><strong>Ví dụ 2:</strong></p>
 <pre><strong>Input:</strong> nums1 = [1], m = 1, nums2 = [], n = 0
 <strong>Output:</strong> [1]
 </pre>
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Yêu cầu:</strong></p>
 
 <ul>
 	<li><code>nums1.length == m + n</code></li>
@@ -25,7 +24,7 @@
 	<li><code>-10<sup>9</sup> &lt;= nums1[i], nums2[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
 
-## Solutions
+## Giải pháp
 
 <!-- tabs:start -->
 
