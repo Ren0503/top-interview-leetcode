@@ -48,3 +48,41 @@ By the second attempt, you may discover some new tricks or new methods. By the t
 
 ## Trees
 
+- [Maximum Depth of Binary Tree](./trees/Maximum-Depth-of-Binary-Tree/)
+- [Validate Binary Search Tree](./trees/Validate-Binary-Search-Tree/)
+- [Symmetric Tree](./trees/Symmetric-Tree/)
+- [Binary Tree Level Order Traversal](./trees/Binary-Tree-Level-Order-Traversal/)
+- [Convert Sorted Array to Binary Search Tree](./trees/Convert-Sorted-Array-to-Binary-Search-Tree/)
+
+## Sorting and Searching
+
+- [Merge Sorted Array](./sort/Merge-Sorted-Array/)
+- [First Bad Version](./sort/First-Bad-Version/)
+
+## Dynamic Programming
+
+- [Climbing Stairs](./dynamic-programming/Climbing-Stairs/)
+- [Best Time to Buy and Sell Stock](./dynamic-programming/Best-Time-to-Buy-and-Sell-Stock/)
+- [Maximum Subarray](./dynamic-programming/Maximum-Subarray/)
+- [House Robber](./dynamic-programming/House-Robber/)
+
+## Design
+
+- [Shuffle an Array](./design/Shuffle-an-Array/)
+- [Min Stack](./design/Min-Stack/)
+
+## Math
+
+- [Fizz Buzz](./maths/Fizz-Buzz/)
+- [Count Primes](./maths/Count-Primes/)
+- [Power of Three](./maths/Power-of-Three/)
+- [Roman to Integer](./maths/Roman-to-Integer/)
+
+## Others
+
+- [Number of 1 Bits](./others/Number-of-1-Bits/)
+- [Hamming Distance](./others/Hamming-Distance/)
+- [Reverse Bits](./others/Reverse-Bits/)
+- [Pascal's Triangle](./others/Pascal-Triangle/)
+- [Valid Parentheses](./others/Valid-Parentheses/)
+- [Missing Number](./others/Missing-Number/)
